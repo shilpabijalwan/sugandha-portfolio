@@ -1,0 +1,141 @@
+body {
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  width: 80%;
+  margin: 50px auto 0;
+  padding: 8px 16px;
+  border-radius: 36px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.5px;
+
+  /* ⬇️ Matching background */
+  background: linear-gradient(to bottom, #1b2735, #0f1a24), url("/noise.png");
+  background-size: cover;
+  background-repeat: repeat;
+
+  /* Inset shadow for inner depth */
+  box-shadow: inset 9px 8px 32px 14px rgba(0, 0, 0, 0.2);
+
+  /* Optional extra polish */
+  backdrop-filter: blur(2px); /* Adds subtle depth */
+}
+
+.nameDiv {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background: #77530a;
+  background-size: 90px;
+  background-position: center;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  /* overflow: hidden; */
+}
+
+.Btn {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "Download Resume";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+
+.card {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(240, 15%, 9%);
+  --paragraph: hsl(0, 0%, 83%);
+  --line: hsl(240, 9%, 17%);
+  --primary: hsl(189, 92%, 58%);
+
+  /* position: relative; */
+  height: 530px;
+  padding: 50px;
+  width: full;
+  background-color: hsla(240, 15%, 9%, 1);
+  background-image: radial-gradient(
+      at 88% 40%,
+      hsla(240, 15%, 9%, 1) 0px,
+      transparent 85%
+    ),
+    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, #017084 0px, transparent 85%),
+    radial-gradient(at 41% 94%, hsl(189, 97%, 36%) 0px, transparent 85%),
+    radial-gradient(at 100% 99%, rgb(2, 56, 64) 0px, transparent 85%);
+
+  border-radius: 1rem;
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+}
+.blurred {
+  filter: blur(4px);
+  opacity: 0.5;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1.5rem;
+    height: auto;
+  }
+}
