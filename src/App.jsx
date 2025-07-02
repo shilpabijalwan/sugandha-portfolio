@@ -4,7 +4,7 @@ import Navbar from "./Navbar"; // Keep navbar always loaded
 import Socials from "./components/social"; // Socials can be shown anytime
 
 const Home = lazy(() => import("./home"));
-const About = lazy(() => import("./About"));
+const About = lazy(() => import("./about"));
 const ExperienceSection = lazy(() => import("./experience"));
 const ContactForm = lazy(() => import("./contact"));
 function App() {
