@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import "./App.css";
 import Navbar from "./Navbar"; // Keep navbar always loaded
 import Socials from "./components/social"; // Socials can be shown anytime
+import Skeleton from "./components/Skeleton";
 
 const Home = lazy(() => import("./home"));
 const About = lazy(() => import("./about"));
@@ -13,22 +14,26 @@ function App() {
       <Navbar />
       <Suspense
         fallback={
-          <div className="text-white text-center py-10">Loading Home...</div>
+          <div className="mt-20  m-auto w-4/6">
+            <Skeleton />
+          </div>
         }
       >
         <Home />
       </Suspense>
       <Suspense
         fallback={
-          <div className="text-white text-center py-10">Loading About...</div>
+          <div className="mt-20  m-auto w-4/6">
+            <Skeleton />
+          </div>
         }
       >
         <About />
       </Suspense>
       <Suspense
         fallback={
-          <div className="text-white text-center py-10">
-            Loading Experience...
+          <div className="mt-20  m-auto w-4/6">
+            <Skeleton />
           </div>
         }
       >
@@ -36,7 +41,9 @@ function App() {
       </Suspense>
       <Suspense
         fallback={
-          <div className="text-white text-center py-10">Loading Contact...</div>
+          <div className="mt-20  m-auto w-4/6">
+            <Skeleton />
+          </div>
         }
       >
         <ContactForm />

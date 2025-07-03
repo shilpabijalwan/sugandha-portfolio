@@ -37,9 +37,6 @@ function ExperienceSection() {
       id="experience"
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1b2735] to-[#0f1a24] text-white"
     >
-      {/* Noise Overlay */}
-      <div className="absolute inset-0 bg-[url('/asfalt-dark.png')] opacity-10 mix-blend-overlay pointer-events-none"></div>
-
       {/* Main Content */}
       <div className="relative z-10 w-full max-w-6xl px-5 py-20">
         <h1 className="text-4xl sm:text-6xl text-center mb-10">Experience</h1>

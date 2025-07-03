@@ -22,14 +22,13 @@ function Home() {
           Talent Acquisition Partner
         </h1>
 
-        {/* Image with blob */}
         <div className="flex justify-center mt-16 sm:mt-20 relative">
-          <div className="absolute top-1/2 -translate-y-1/2 w-[240px] h-[280px] sm:w-[320px] sm:h-[360px] md:w-[380px] md:h-[420px] bg-[#ffd277] rounded-[60%_40%_30%_70%_/_50%_60%_40%_50%] blur-[2px] z-0"></div>
+          <div className="absolute top-1/2 -translate-y-1/2 w-[260px] h-[290px] sm:w-[320px] sm:h-[360px] md:w-[380px] md:h-[420px] bg-[#ffd277] rounded-[60%_40%_30%_70%_/_50%_60%_40%_50%] blur-[2px] z-0"></div>
 
           <img
             src="/sugtransformed.png"
             alt="Creative"
-            className="relative z-10 h-[240px] sm:h-[300px] md:h-[360px] w-auto object-cover rounded-3xl p-3"
+            className="relative z-10 h-[240px] sm:h-[300px] md:h-[360px] w-auto object-cover rounded-3xl p-8"
           />
         </div>
 
